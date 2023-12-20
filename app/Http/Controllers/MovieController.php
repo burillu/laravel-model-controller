@@ -3,14 +3,15 @@
 namespace App\Http\Controllers;
 
 use App\Models\Movie;
-
+use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
 {
     public function index()
     {
-        $movies = Movie::all();
+        //$movies = Movie::all();
+        $movies = DB::table('movies')->orderBy("vote", "desc")->get();
         //dd($movies);
         return view("movies.index", compact("movies"));
     }
@@ -23,5 +24,11 @@ class MovieController extends Controller
         }
         abort(404);
 
+    }
+    public function create()
+    {
+        $message = "Hello create";
+        dd($message);
+        return view("movies.create", compact("message"));
     }
 }

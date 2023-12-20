@@ -19,6 +19,8 @@
                 </div>
             @endforeach
         </div>
+        <div class="text-center"><a href="{{ route('movies.create') }} " class="btn btn-outline-danger"><i
+                    class="fa-solid fa-plus"></i> <i class="fa-solid fa-film"></i></a></div>
     </div>
 
 

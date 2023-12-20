@@ -22,6 +22,8 @@ Route::get('/movies', [MovieController::class, 'index'])->name('movies');
 
 Route::get('/movies/{id}', [MovieController::class, 'show'])->name('movies.show');
 
+Route::get('/movies/create', [MovieController::class, 'create'])->name('movies.create');
+
 Route::get('/books', [BookController::class, 'index'])->name('books');
 
 Route::get('/books/{id}', [BookController::class, 'show'])->name('books.show');
