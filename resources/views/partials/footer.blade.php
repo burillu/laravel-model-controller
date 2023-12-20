@@ -1,11 +1,11 @@
 @php
-    
+
 @endphp
 
 <footer>
-  
-    <h2>Pippo footer</h2>
-   
+
+    <div class="container">
+        Made with &#9697; by Michele
+    </div>
+
 </footer>
-    
-    

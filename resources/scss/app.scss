@@ -16,3 +16,12 @@ img {
 #logo {
     width: 50px;
 }
+
+.navbar-nav .nav-link.active {
+
+    font-weight: bold;
+    border-bottom: 2px solid $my-color-primary;
+    //color: $my-color-primary;
+
+
+}

@@ -25,18 +25,18 @@
                 </li>
                 <li class="nav-item">
 
-                    <a class="nav-link {{ Route::currentRouteName() == 'movie' ? 'active' : '' }}"
+                    <a class="nav-link {{ Route::currentRouteName() == 'movies' ? 'active' : '' }}"
                         href="{{ route('movies') }}">
                         Movies
                     </a>
                 </li>
-                {{-- <li class="nav-item">
-                    <a class="nav-link {{ Route::currentRouteName() == 'recipes.index' ? 'active' : '' }}"
-                        href="{{ route('recipes.index') }}">
-                        Ricette
+                <li class="nav-item">
+                    <a class="nav-link {{ Route::currentRouteName() == 'books' ? 'active' : '' }}"
+                        href="{{ route('books') }}">
+                        Books
                     </a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link {{ Route::currentRouteName() == 'about' ? 'active' : '' }}"
                         href="{{ route('about') }}">
                         Chi siamo
