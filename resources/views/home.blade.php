@@ -15,6 +15,9 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ $movie->title }}</h5>
                         <a href="{{ route('movies') }}" class="btn btn-primary">All Movie</a>
+
+                        <a href="{{ route('movies.show', $movie->id) }}" class="btn btn-success">About this Movie</a>
+
                     </div>
                 </div>
             </div>
@@ -26,6 +29,7 @@
                     <div class="card-body">
                         <h5 class="card-title">{{ $book->title }}</h5>
                         <a href="{{ route('books') }}" class="btn btn-primary">All Books</a>
+                        <a href="{{ route('books.show', $book->id) }}" class="btn btn-success">About this Book</a>
                     </div>
                 </div>
             </div>
