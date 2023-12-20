@@ -1,9 +1,48 @@
 @php
 
-//dd($menu);   
+    //dd($menu);
 @endphp
-<header>
- 
-<h2>Pippo Header</h2>
 
+
+<header class="bg-white container">
+
+    <div id="main-menu ">
+
+        <nav class="navbar-nav navbar-light">
+
+            <ul class="list-unstyled d-flex align-content-center gap-2 text-uppercase">
+                <li class="nav-item">
+                    <div id="logo" class="text-center">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Laravel.svg/1969px-Laravel.svg.png"
+                            alt="logo-laravel">
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
+                        href="{{ route('home') }}">
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+
+                    <a class="nav-link {{ Route::currentRouteName() == 'movie' ? 'active' : '' }}"
+                        href="{{ route('movies') }}">
+                        Movies
+                    </a>
+                </li>
+                {{-- <li class="nav-item">
+                    <a class="nav-link {{ Route::currentRouteName() == 'recipes.index' ? 'active' : '' }}"
+                        href="{{ route('recipes.index') }}">
+                        Ricette
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ Route::currentRouteName() == 'about' ? 'active' : '' }}"
+                        href="{{ route('about') }}">
+                        Chi siamo
+                    </a>
+                </li> --}}
+            </ul>
+        </nav>
+    </div>
 </header>

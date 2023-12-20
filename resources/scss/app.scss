@@ -8,3 +8,11 @@ $fa-font-path: "../webfonts" !default;
 @import "~@fortawesome/fontawesome-free/scss/brands";
 
 @import '~bootstrap/scss/bootstrap';
+
+img {
+    width: 100%;
+}
+
+#logo {
+    width: 50px;
+}
